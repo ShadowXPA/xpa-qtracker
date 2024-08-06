@@ -1,7 +1,7 @@
 # XPA QTracker
 
 XPA QTracker is an API that lets you query a [Star Wars: Jedi Academy server](https://jkhubservers.appspot.com/) for information or status.  
-It should also work with [Star Wars: Jedi Outcast](https://jkhubservers.appspot.com/?protocol=jo), [Quake 3 Arena](https://www.quakeservers.net/quake3/servers/), and games with similar server protocols.
+It should also work with [Star Wars: Jedi Outcast](https://jkhubservers.appspot.com/?protocol=jo), [Quake 3](https://www.quakeservers.net/quake3/servers/), and games with similar server protocols.
 
 ## The API
 
@@ -10,7 +10,7 @@ It should also work with [Star Wars: Jedi Outcast](https://jkhubservers.appspot.
 **GET** `/api/v1/tracker/status/{server[:port]}`
 
 Gets the status of a server.  
-{server} may also be the name of a saved server from the [Get all servers](#get-all-servers)
+{server} may also be the name of a saved server from the [Get all servers](#get-all-servers) endpoint.  
 Status may include: server parameters such as name, IP, mod, game type, and other metadata, as well as players and bots.
 
 <details>
@@ -127,7 +127,7 @@ Status may include: server parameters such as name, IP, mod, game type, and othe
 **GET** `/api/v1/tracker/info/{server[:port]}`
 
 Gets the information of a server.  
-{server} may also be the name of a saved server from the [Get all servers](#get-all-servers)  
+{server} may also be the name of a saved server from the [Get all servers](#get-all-servers) endpoint.  
 Similar to [Get server status](#get-server-status) but has less information, and no player information is shown.  
 
 <details>
