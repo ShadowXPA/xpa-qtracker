@@ -181,18 +181,24 @@ Gets all saved servers from the database.
 ```
 </details>
 
-## Running the application
+## Installation
 
-Head to the [Releases](https://github.com/ShadowXPA/xpa-qtracker/releases) tab and download the latest version available.  
-To run the application simply use `java -jar qtracker-{version}.jar` in the console.
+### Prerequisites
 
-You can also run it from your IDE by running the `main` function...
+- [Java 17+](https://www.oracle.com/java/technologies/downloads/)
+
+### Run
+
+Head to the [Releases](https://github.com/ShadowXPA/xpa-qtracker/releases/latest) tab and download the latest version available.  
+To run the application simply use `java -jar qtracker-[VERSION].jar` in the console.
+
+You can also run it from your IDE by running the `main` function.  
 
 ### Database
 
 You may want to change databases from H2 to something like Postgres or MySQL.  
 Add the related dependency on the `pom.xml` file and edit the `application.properties` accordingly.  
-If you want to keep using H2, the H2 console is located at `localhost:8080/h2`, configurable in the properties file.  
+If you want to keep using H2, the H2 console is located at `localhost:8080/h2` (configurable in the properties file).  
 
 The database only saves the servers for quick access.  
 For example, you may use `/api/v1/tracker/status/jawa` to get the status for the [JAWA](https://jawaclan.com/) server. In this case it would translate `jawa -> 135.148.31.103:29070`.  
