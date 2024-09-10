@@ -3,7 +3,7 @@
 XPA QTracker is an API that lets you query a [Star Wars: Jedi Academy server](https://jkhubservers.appspot.com/) for information or status.  
 It should also work with [Star Wars: Jedi Outcast](https://jkhubservers.appspot.com/?protocol=jo), [Quake 3](https://www.quakeservers.net/quake3/servers/), and games with similar server protocols.
 
-## The API
+## API
 
 ### Get server status
 
